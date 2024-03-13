@@ -1,4 +1,4 @@
-# Projeto de Quarta
+# Projeto de Quinta
 
 ## Contribuição (grupo)
 
@@ -7,13 +7,23 @@
 
 ## Instalação
 
+### Instalação app
+
 1. **Git clone** o repositório na pasta que preferir.
 2. Abra o **Visual Studio Code** na pasta (ou IDE de interesse).
 3. Rode **cd app**.
 4. Abra o terminal e rode **npm install**.
 5. Para rodar o projeto, basta rodar **npm run dev**.
 
-## Extra
+### Instalação server
+
+1. **Git clone** o repositório na pasta que preferir.
+2. Abra o **Visual Studio Code** na pasta (ou IDE de interesse).
+3. Rode **cd server**.
+4. Abra o terminal e rode **npm install**.
+5. Para rodar o projeto, basta rodar **npm run start**.
+
+## Extras
 
 Para terminar o processo no terminal basta pressionar **Ctrl + C** enquanto estiver com foco no terminal.
 
