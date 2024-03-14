@@ -1,9 +1,12 @@
-# Projeto de Quinta
+# Projeto de Easy Tasking
 
+Este é um projeto, em colaboração, com o objetivo de criar uma aplicação de armazenamento e gerenciamento de tarefas.<br>
+
+- O Easy Tasking é ferramenta essencial para organizar e otimizar tarefas pessoais e profissionais. Essa aplicação oferece funcionalidades como;gerenciamento em tempo real das tasks, criação de novas tarefas e deleção de tarefas concluidas.<br><br>
 ## Contribuição (grupo)
 
-- nome: Leandro Ferreira RA: 22006054
-- nome: João Gabriel do Amaral Miranda Silva RA: 22309466
+- **Nome**: Leandro Ferreira **RA**: 22006054
+- **nome**: João Gabriel do Amaral Miranda Silva **RA**: 22309466
 
 ## Instalação
 
@@ -11,9 +14,9 @@
 
 1. **Git clone** o repositório na pasta que preferir.
 2. Abra o **Visual Studio Code** na pasta (ou IDE de interesse).
-3. Rode **cd app**.
+3. No Terminal, vá até o diretório da pasta e rode **cd app**.
 4. Abra o terminal e rode **npm install**.
-5. Para rodar o projeto, basta rodar **npm run dev**.
+5. Para inicializar o projeto, basta rodar **npm run dev**.
 
 ### Instalação server
 
@@ -25,10 +28,10 @@
 
 ## Extras
 
-Para terminar o processo no terminal basta pressionar **Ctrl + C** enquanto estiver com foco no terminal.
+Para terminar o processo no terminal basta pressionar **Ctrl + C** enquanto estiver com o terminal selecionado.
 
-Enquanto o app estiver rodando no terminal, ele disponibilizará um **URL**, acesse-o para poder ver as mudanças em tempo real.
+Enquanto o app estiver rodando no terminal, ele disponibilizará uma **URL**,você pode acessá-lo para poder ver as mudanças em tempo real.
 
-Em caso do servidor **não** estiver atualizando, um jeito manual de atualizar é acessando o terminal ainda com o servidor rodando e enviando **r + enter**.
+Em caso do servidor **não** estiver atualizando, um jeito manual de atualizar é acessando o terminal ainda com o servidor rodando e digitar **r + enter**.
 
-Caso tenha mais dúvidas sobre o app rodando, envie **h + enter**.
+Caso tenha mais dúvidas sobre o app rodando, digite **h + enter**.
