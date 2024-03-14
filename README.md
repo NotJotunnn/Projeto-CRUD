@@ -9,7 +9,7 @@ Este é um projeto, em colaboração, com o objetivo de criar uma aplicação de
 ## Contribuição (grupo)
 
 - **Nome**: Leandro Ferreira **RA**: 22006054
-- **nome**: João Gabriel do Amaral Miranda Silva **RA**: 22309466
+- **Nome**: João Gabriel do Amaral Miranda Silva **RA**: 22309466
 
 ## Instalação
 
