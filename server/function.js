@@ -5,7 +5,7 @@ const readFile = () => {
   const time = new Date
   try {
     const readData = fs.readFileSync('data.json', 'utf8')
-    console.log(`[${time.getHours()}:${time.getMinutes()}] Content read successfully!`)
+    console.log(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] Content read successfully!`)
 
     return {
       ok: true,
@@ -14,7 +14,7 @@ const readFile = () => {
       data: JSON.parse(readData)
     }
   } catch (err) {
-    console.error(`[${time.getHours()}:${time.getMinutes()}] Error reading file: ${err}`)
+    console.error(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] Error reading file: ${err}`)
 
     return {
       ok: false,
@@ -48,10 +48,10 @@ const addNewTask = (req, res) => {
 
     const time = new Date
     if (err) {
-      console.error(`[${time.getHours()}:${time.getMinutes()}] Error writing task to file: ${err}`)
+      console.error(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] Error writing task to file: ${err}`)
       res.json({ ok: false, status: 500, action: 'CREATE', error: "Error writing task to file" })
     }
-    console.log(`[${time.getHours()}:${time.getMinutes()}] Task written to file successfully!`)
+    console.log(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] Task written to file successfully!`)
   })
 
 
@@ -73,10 +73,10 @@ const deleteTask = (req, res) => {
   fs.writeFile('data.json', JSON.stringify(content), (err) => {
     const time = new Date
     if (err) {
-      console.error(`[${time.getHours()}:${time.getMinutes()}] Error deleting task: ${err}`)
+      console.error(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] Error deleting task: ${err}`)
       res.json({ ok: false, status: 500, action: 'DELETE', error: "Error deleting task from file" })
     }
-    console.log(`[${time.getHours()}:${time.getMinutes()}] Task deleted from file successfully!`)
+    console.log(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] Task deleted from file successfully!`)
   })
 
 
@@ -94,19 +94,21 @@ const updateTask = (req, res) => {
 
   if(!contentToBeUpdated) res.json({ ok: false, status: 400, action: 'UPDATE', error: "Task not found" })
 
-  contentToBeUpdated.task = req.params.newtask
+  const oldContent = contentToBeUpdated
+
+  const newContent = {...contentToBeUpdated, task: req.params.newtask}
 
   fs.writeFile('data.json', JSON.stringify([...content, contentToBeUpdated]), (err) => {
     const time = new Date
     if (err) {
-      console.error(`[${time.getHours()}:${time.getMinutes()}] Error updating task: ${err}`)
+      console.error(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] Error updating task: ${err}`)
       res.json({ ok: false, status: 500, action: 'UPDATE', error: "Error updating task from file" })
     }
-    console.log(`[${time.getHours()}:${time.getMinutes()}] Task updated from file successfully!`)
+    console.log(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] Task updated from file successfully!`)
   })
 
 
-  res.json({ ok: true, status: 200, action: 'UPDATE', task: contentToBeUpdated })
+  res.json({ ok: true, status: 200, action: 'UPDATE', task: newContent, updatedTask: oldContent })
 }
 
 module.exports = { getTasks, addNewTask, deleteTask, updateTask }

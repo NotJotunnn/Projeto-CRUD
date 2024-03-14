@@ -7,12 +7,12 @@ const app = express()
 
 app.use((req, res, next) => {
   const time = new Date
-  console.log(`[${time.getHours()}:${time.getMinutes()}] ${req.method} ${req.url}`)
+  console.log(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] ${req.method} ${req.url}`)
 
   next()
 })
 
-app.get('/tasks', (req, res) => getTasks(req, res))
+app.get('/', (req, res) => getTasks(req, res))
 
 app.get('/newtask/:task', (req, res) => addNewTask(req, res))
 
