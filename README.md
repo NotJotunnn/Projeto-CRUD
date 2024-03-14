@@ -1,8 +1,11 @@
 # Projeto de Easy Tasking
 
-Este é um projeto, em colaboração, com o objetivo de criar uma aplicação de armazenamento e gerenciamento de tarefas.<br>
+Este é um projeto, em colaboração, com o objetivo de criar uma aplicação de armazenamento e gerenciamento de tarefas.
 
-- O Easy Tasking é ferramenta essencial para organizar e otimizar tarefas pessoais e profissionais. Essa aplicação oferece funcionalidades como;gerenciamento em tempo real das tasks, criação de novas tarefas e deleção de tarefas concluidas.<br><br>
+
+- O Easy Tasking é ferramenta essencial para organizar e otimizar tarefas pessoais e profissionais. Essa aplicação oferece funcionalidades como;gerenciamento em tempo real das tasks, criação de novas tarefas e deleção de tarefas concluidas.
+
+
 ## Contribuição (grupo)
 
 - **Nome**: Leandro Ferreira **RA**: 22006054
