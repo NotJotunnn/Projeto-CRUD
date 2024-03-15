@@ -4,16 +4,21 @@ import TaskForm from "./components/TaskForm"
 
 function App() {
 
-  // TODO: Adicionar estado para guardar os dados das tarefas
-  // TODO: Passar estado dos dados das tarefas para <CardsGroup />
+  // * Adicionar estado para guardar os dados das tarefas
+  // * Passar estado dos dados das tarefas para <CardsGroup />
+  // TODO: Acessar os dados do banco
 
   const [task, setTask] = useState([{"id":4,"task":"cleanupAvenue"},{"id":5,"task":"cleanupAvenue"},{"id":"182ea6b9-19c0-4a42-b435-55c6ce501eb5","task":"takeTheGarbageOut"}]);
 
   //const props = {task, setTask};
 
 
-  // TODO: Adicionar função para alterar os dados das tarefas
-  // TODO: Passar função para alterar os dados das tarefas para <TaskForm />
+  // TODO: Adicionar função para adicionar tarefas
+  // TODO: Passar função para adcionar tarefas para <TaskForm />
+  // TODO: Passar função de alteração dos dados das tarefas para <TaskForm />
+
+  // TODO: Adicionar função para alterar tarefas
+  // TODO: Passar função para alterar tarefas para <CardsGroup />
 
 
   return (
