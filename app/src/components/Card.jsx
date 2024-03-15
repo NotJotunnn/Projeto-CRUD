@@ -1,7 +1,10 @@
 import { useState } from "react";
 
+// ! (Continuação do arquivo CardsGroup) então, você tem que puxar agora desse lado
+// ! como é um item separado do props, vc tem q fazer o seguinte: {props}, removeTask, utualizaTask
 const Cards = ({props}) => {
   
+  // ! Depois de fazer oq citei ali em cima, teste para saber se já está te concedendo acesso às funções, se não, desconstrua q nem feito abaixo
   const {task, id} = props // desconstruindo array
   
   const [title, setTitle] = useState(task)
@@ -19,6 +22,9 @@ const Cards = ({props}) => {
   function updateTask() { 
     // Function DELETE task
     console.log('Botão Pressionado', id)
+    // ! A estrutura de um useState é:
+    // ! const [ nomeDaVariável, funçãoQueAlteraVariável ] = useState(valorInicialDaVariável)
+    // ! E sim, é estranho não considerar uma função
     utualizaTasks(id) // ERROR removeTask is not a function ??
   }
 
@@ -38,6 +44,7 @@ const Cards = ({props}) => {
     setHoverDeleteBtn(false)
   }
 
+  // ! Cuidado com nome não intuitivo
   function callFunctions() {
     toggleBlur()
     updateTask()
