@@ -1,8 +1,15 @@
 import Card from './Card'
 
-const CardsGroup = () => {
+const CardsGroup = (props) => {
 
-  // TODO: Acessar dados de tarefas já geradas
+  const {task} = props 
+
+
+
+
+ 
+
+  // TODO: Acessar dados de tarefas já gerada
 
   // TODO: Adicionar função ativada ao pressionar o botão "✅" para completar (deletar)
   // TODO: Adicionar função ativada ao pressionar o botão "🔄" para dar update
@@ -13,7 +20,9 @@ const CardsGroup = () => {
 
   return (
     <div className="flex flex-col gap-[15px] items-center w-full min-h-[screen] mb-[42px]">
-      <Card />
+
+      {task && task.map(element => <Card props={element} key={element.id} /> )}
+
     </div>
   );
 }
