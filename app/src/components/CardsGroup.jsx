@@ -9,14 +9,15 @@ const CardsGroup = (props) => {
 
  
 
-  // TODO: Acessar dados de tarefas já gerada
+  // * Acessar dados de tarefas já gerada
 
-  // TODO: Adicionar função ativada ao pressionar o botão "✅" para completar (deletar)
+  // ! Adicionar função ativada ao pressionar o botão "✅" para completar (deletar)
+  // TODO: Trazer função clickButton dos <Card /> para <CardsGroup />
   // TODO: Adicionar função ativada ao pressionar o botão "🔄" para dar update
 
   // TODO: Passar ambas funções anteriores para o componente <Card /> abaixo
 
-  // TODO: Adicionar mapeamento à partir de estado para gerar visualização dos dados na tela
+  // * Adicionar mapeamento à partir de estado para gerar visualização dos dados na tela
 
   return (
     <div className="flex flex-col gap-[15px] items-center w-full min-h-[screen] mb-[42px]">
