@@ -6,14 +6,14 @@ const CardsGroup = (props) => {
 
   function removeTask(id) {
     const updateTasks = task.filter(item => item.id !== id)
-    return updateTasks
+     setTask(updateTasks)
     
     //ERROR
   }
 
   function utualizaTask(id) {
     const updateTasks = task.find(item => item.id === id)
-    return updateTasks
+     setTask(updateTasks)
     
     //ERROR
   }
@@ -23,14 +23,10 @@ const CardsGroup = (props) => {
   // TODO: Passar ambas funções anteriores para o componente <Card /> abaixo -- CHECK
 
 
-  // * Acessar dados de tarefas já gerada
+  // TODO: Acessar dados de tarefas já gerada
 
-  // TODO: Adicionar função ativada ao pressionar o botão "✅" para completar (deletar)
-  // TODO: Adicionar função ativada ao pressionar o botão "🔄" para dar update
 
-  // TODO: Passar ambas funções anteriores para o componente <Card /> abaixo
-
-  // * Adicionar mapeamento à partir de estado para gerar visualização dos dados na tela
+  // TODO: Adicionar mapeamento à partir de estado para gerar visualização dos dados na tela
 
   return (
     <div className="flex flex-col gap-[15px] items-center w-full min-h-[screen] mb-[42px]">
