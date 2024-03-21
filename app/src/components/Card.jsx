@@ -9,18 +9,14 @@ const Cards = ({props}) => {
 
 
   function deleteTask() { 
-    // console.log('Botão Pressionado', id)
     removeTask(id)
   }
 
-  function atualizaTask() { 
-    // console.log('Botão Pressionado', id)
+  function atualizaTask(i) { 
     toggleBlur()
-    // ! Utilize o valor title ao invés de target.value kk
-    // console.log(i.target.value) // ! Cath value antes de escrever 
-    
     if(!blur) {
-      updateTask(id, title)
+      let tasktitle = i.target.value
+      updateTask(id, tasktitle)
     }
   }
 
