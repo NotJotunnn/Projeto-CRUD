@@ -11,22 +11,15 @@ const CardsGroup = ({props}) => {
 
 
   function atualizaCardTask(id, newTask) {
-
-    // TODO: Arrumar função abaixo e utiliza-la em <Card />
-    // ? Sugestão: Utilizar Array temporário no escopo da função para adicionar dados e depois alterar no setTask()
-    const updateTasks = task.map(item => {
-      if (item.id == id) return item.task == newTask
+    let tempArray = []
+    
+    task.map(item => {
+      if (item.id == id) tempArray.push({...item, task: newTask})
+      else tempArray.push({...item})
     })
-     setTask(updateTasks)
+
+    setTask(tempArray)
   }
-
-
-  // TODO: Adicionar função para alterar tarefas
-  // TODO: Passar função para alterar tarefas para <Cards />
-
-
-
-
 
   // *: Acessar dados de tarefas já gerada
 
