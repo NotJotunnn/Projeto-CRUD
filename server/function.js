@@ -1,5 +1,5 @@
-const fs = require('fs')
-const { v4: uuidv4 } = require('uuid')
+import fs from 'fs'
+import { v4 as uuidv4 } from 'uuid'
 
 const readFile = () => {
   const time = new Date
@@ -38,7 +38,7 @@ const getTasks = (req, res) => {
 const addNewTask = (req, res) => {
   const data = readFile().data
 
-  const newTask = { id: uuidv4(), task: req.params.task }
+  const newTask = { id: uuidv4(), createdDate: new Date, lastModified: new Date, task: req.params.task }
   
   // Content to write
   const content = [...data, newTask]
@@ -96,9 +96,9 @@ const updateTask = (req, res) => {
 
   const oldContent = contentToBeUpdated
 
-  const newContent = {...contentToBeUpdated, task: req.params.newtask}
+  const newContent = {...contentToBeUpdated, lastModified: new Date, task: req.params.newtask }
 
-  fs.writeFile('data.json', JSON.stringify([...content, contentToBeUpdated]), (err) => {
+  fs.writeFile('data.json', JSON.stringify([...content, newContent]), (err) => {
     const time = new Date
     if (err) {
       console.error(`[${time.getHours().toString().padStart(2, '0')}:${time.getMinutes().toString().padStart(2, '0')}] Error updating task: ${err}`)
@@ -108,7 +108,7 @@ const updateTask = (req, res) => {
   })
 
 
-  res.json({ ok: true, status: 200, action: 'UPDATE', task: newContent, updatedTask: oldContent })
+  res.json({ ok: true, status: 200, action: 'UPDATE', newTask: newContent, updatedTask: oldContent })
 }
 
-module.exports = { getTasks, addNewTask, deleteTask, updateTask }
+export { getTasks, addNewTask, deleteTask, updateTask }

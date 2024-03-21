@@ -1,1 +1,62 @@
-[{"id":4,"task":"cleanupAvenue"},{"id":5,"task":"cleanupAvenue"},{"id":"182ea6b9-19c0-4a42-b435-55c6ce501eb5","task":"takeTheGarbageOut"},{"id":"0776f862-2794-469a-9366-6997669a62f9","task":"cleanTheFurniture"},{"id":1,"task":"trashupAvenue"},{"id":"e6a31bcc-59c7-434f-8771-105ec4e47c09","task":"Clear out the trash"},{"id":2,"task":"Flye on a no flight zone"},{"id":"96c5e882-e331-4bc1-aa3f-c96611319aa5","task":"beber agua"},{"id":6,"task":"Take the trash out"}]
+[
+  {
+    "id": 2,
+    "task": "Fly on a no flight zone",
+    "lastModified": "2024-03-21T16:12:19.977Z",
+    "createdDate": "2024-03-21T16:12:19.977Z"
+  },
+  {
+    "id": 6,
+    "task": "Take the trash out",
+    "createdDate": "2024-03-21T16:12:43.566Z",
+    "lastModified": "2024-03-21T16:12:43.566Z"
+  },
+  {
+    "id": 1,
+    "task": "TrashupAvenue",
+    "createdDate": "2024-03-21T16:13:03.307Z",
+    "lastModified": "2024-03-21T16:13:03.307Z"
+  },
+  {
+    "id": "96c5e882-e331-4bc1-aa3f-c96611319aa5",
+    "task": "beber agua",
+    "createdDate": "2024-03-21T16:13:20.961Z",
+    "lastModified": "2024-03-21T16:13:20.961Z"
+  },
+  {
+    "id": "e6a31bcc-59c7-434f-8771-105ec4e47c09",
+    "task": "Clear out the trash",
+    "createdDate": "2024-03-21T16:13:44.186Z",
+    "lastModified": "2024-03-21T16:13:44.186Z"
+  },
+  {
+    "id": "0776f862-2794-469a-9366-6997669a62f9",
+    "task": "cleanTheFurniture",
+    "createdDate": "2024-03-21T16:14:19.297Z",
+    "lastModified": "2024-03-21T16:14:19.297Z"
+  },
+  {
+    "id": "182ea6b9-19c0-4a42-b435-55c6ce501eb5",
+    "task": "takeTheGarbageOut",
+    "createdDate": "2024-03-21T16:14:37.096Z",
+    "lastModified": "2024-03-21T16:14:37.096Z"
+  },
+  {
+    "id": 4,
+    "task": "cleanupAvenue",
+    "createdDate": "2024-03-21T16:14:54.777Z",
+    "lastModified": "2024-03-21T16:14:54.777Z"
+  },
+  {
+    "id": 5,
+    "task": "cleanupPizza",
+    "createdDate": "2024-03-21T16:15:02.976Z",
+    "lastModified": "2024-03-21T16:32:03.607Z"
+  },
+  {
+    "id": "72c9bb51-d00d-4caa-a5a0-8bfc76f14b29",
+    "createdDate": "2024-03-21T16:32:34.254Z",
+    "lastModified": "2024-03-21T16:32:34.254Z",
+    "task": "Print papers!"
+  }
+]

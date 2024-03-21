@@ -1,5 +1,5 @@
-const express = require('express')
-const { getTasks, addNewTask, deleteTask, updateTask } = require('./function')
+import express from 'express'
+import { getTasks, addNewTask, deleteTask, updateTask } from './function.js'
 
 const PORT = 3000
 
@@ -21,4 +21,4 @@ app.get('/deletetask/:taskid', (req, res) => deleteTask(req, res))
 app.get('/updatetask/:taskid/:newtask', (req, res) => updateTask(req, res))
 
 
-app.listen(PORT, () => console.log(`Server is now listening on port localhost:${PORT}`))
+app.listen(PORT, () => console.log(`\n\n\tServer is now listening on port http://localhost:${PORT}\n\n`))
