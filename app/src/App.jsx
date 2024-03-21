@@ -13,12 +13,7 @@ function App() {
   const props = {task, setTask};
 
 
-  // TODO: Adicionar função para adicionar tarefas
-  // TODO: Passar função para adcionar tarefas para <TaskForm />
-  // TODO: Passar função de alteração dos dados das tarefas para <TaskForm />
-
-  // TODO: Adicionar função para alterar tarefas
-  // TODO: Passar função para alterar tarefas para <CardsGroup />
+  // TODO: Passar props para <TaskForm />
 
 
   return (

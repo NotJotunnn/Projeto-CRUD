@@ -2,6 +2,8 @@ import { useState } from "react";
 
 const TaskForm = () => {
 
+  // TODO: Acessar props enviados e desconstruir dele a função para alterar as tasks
+
   const placeholderList = [
     'Preciso tirar o lixo...',
     'Preciso abrir a janela...',
